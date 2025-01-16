@@ -13,14 +13,23 @@ public class Main {
         al.add(new Student(105,"Jai",21));
         al.add(new Student(100,"Dravid",27));
 
-        Collections.sort(al, (s1,s2) -> {
+       // Without Lambda expression
+       // Collections.sort(al, new MyClass());
+
+        Collections.sort(al, (s1, s2) -> Integer.compare(s1.age, s2.age));
+
+       // Collections.sort(al, (s1, s2) -> s1.rollno - s2.rollno);
+
+/*        Collections.sort(al, (s1,s2) -> {
             if(s1.age==s2.age)
                 return 0;
             else if(s1.age>s2.age)
                 return 1;
             else
                 return -1;
-        });
+        });*/
+
+
 
         System.out.println(al);
     }

@@ -8,7 +8,7 @@ public class FibonacciSeries {
 
     public static void main(String[] args) {
         System.out.print(num1 + " "+ num2);
-        int nums = 0;
+        int nums = 6;
 //        printFibonacci(nums);
         printFibonacciByRecursionV1(nums-2);
     }

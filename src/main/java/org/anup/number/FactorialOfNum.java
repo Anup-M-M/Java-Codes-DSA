@@ -19,6 +19,6 @@ public class FactorialOfNum {
 
     private static int factByRecursion(int number) {
         if(number == 1) return 1;
-        return number * fact(number-1);
+        return number * factByRecursion(number-1);
     }
 }

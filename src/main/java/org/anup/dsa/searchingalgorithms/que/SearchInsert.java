@@ -6,7 +6,7 @@ package main.java.org.anup.dsa.searchingalgorithms.que;
 public class SearchInsert {
     public static void main(String[] args) {
         int[] arr = {1,3,5,6};
-        int target = 8;
+        int target = 7;
         int index = searchInsert(arr, target);
         //int index = searchInsertByLS(arr, target);
         System.out.println(index);
@@ -18,15 +18,19 @@ public class SearchInsert {
 
         while (left < right) {
             int mid = (left + right) / 2;
+            // Check if the target is found at the mid index
             if (nums[mid] == target) {
-                return mid;
-            } else if (nums[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid ;
+                return mid; // Return the index of the target if found
+            }
+            // If the target is greater than nums[mid], search in the right half
+            else if (nums[mid] < target) {
+                left = mid + 1; // Move the left pointer to mid + 1
+            }
+            // If the target is smaller than nums[mid], search in the left half
+            else {
+                right = mid; // Move the right pointer to mid
             }
         }
-
         return left;
     }
 

@@ -2,14 +2,15 @@ package main.java.org.anup.number;
 
 public class ReverseNumber {
     public static void main(String[] args) {
-        int num= 123, rem =0, rev=0;
+        int num= 123;
+        int reversed = 0;
 
-        while(num>0){
-            rem = num % 10;
-            rev = (rev * 10) + rem;
-            System.out.println(rev);
-            num = num / 10;
+        while (num != 0) {
+            int digit = num % 10;  // Extract the last digit
+            reversed = (reversed * 10) + digit;  // Append digit to reversed number
+            num /= 10;  // Remove the last digit from number
         }
-        System.out.println("The reverse of the given number is: "+ rev);
+
+        System.out.println("The reverse of the given number is: "+ reversed);
     }
 }

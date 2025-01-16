@@ -1,5 +1,6 @@
 package main.java.org.anup.dsa.searchingalgorithms.que;
 
+// leetcode 34
 // Given a sorted array arr of n integers and a target value.
 // Write a program to find the indices of the first and the last occurrences of the target value.
 // If the target is not found then return -1 as indices.

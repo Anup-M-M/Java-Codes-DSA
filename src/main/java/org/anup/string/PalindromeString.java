@@ -8,18 +8,24 @@ public class PalindromeString  {
         name = name.toLowerCase();
         int len = name.length();
 //        boolean bol = isPalindrome(name);
-        boolean bol = isPalindromeByRecursion(0, len-1, name);
+        boolean bol = isPalindromeByRecursion(name);
         System.out.println(bol);
 
     }
 
-    private static boolean isPalindromeByRecursion(int l, int r, String s) {
+    private static boolean isPalindromeByRecursion(String str) {
+        // Base case: if the string is empty or has only one character, it is a palindrome
+        if (str == null || str.length() <= 1) {
+            return true;
+        }
 
-        if(l>=r) return true;
+        // Check the first and last characters
+        if (str.charAt(0) != str.charAt(str.length() - 1)) {
+            return false;
+        }
 
-        if(s.charAt(l)!=s.charAt(r)) return false;
-
-        return isPalindromeByRecursion(l+1, r-1, s);
+        // Recursive case: check the substring excluding the first and last characters
+        return isPalindromeByRecursion(str.substring(1, str.length() - 1));
     }
 
     private static boolean isPalindrome(String name) {

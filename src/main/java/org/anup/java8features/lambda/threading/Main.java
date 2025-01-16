@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
 
 //        MyClass myClass = new MyClass();
-//        Thread childThread = new Thread(myClass);
-//        childThread.run();
+//        Thread thread = new Thread(myClass);
+//        thread.run();
 
         Runnable runnable = () -> {
             for (int i = 0; i < 10; i++) {
-                System.out.println("Hi : "+i);
+                System.out.println("Hi - through lamba expression witout creating implementation class : "+i);
             }
         };
 

@@ -5,13 +5,15 @@ interface B{
     void show();
 }
 
-//class C implements B{
-//
-//    @Override
-//    public void show() {
-//        System.out.println("in show");
-//    }
-//}
+/*
+class C implements B{
+
+    @Override
+    public void show() {
+        System.out.println("in show");
+    }
+}
+*/
 
 
 

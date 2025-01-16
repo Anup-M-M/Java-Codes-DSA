@@ -7,7 +7,8 @@ package main.java.org.anup.number;
 //Provided N you have to find out the Nth Fibonacci Number
 public class NthFibonacciNumber {
     public static void main(String[] args) {
-        int nums = 2;
+        // Fibonacci sequence starts as: 0, 1, 1, 2, 3, 5, 8, 13, 21
+        int nums = 3;
         int ans = printFibonacciByRecursion(nums);
         System.out.println(ans);
     }

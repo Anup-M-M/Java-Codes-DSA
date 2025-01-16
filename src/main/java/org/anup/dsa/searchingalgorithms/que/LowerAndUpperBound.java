@@ -7,8 +7,8 @@ public class LowerAndUpperBound {
         int[] arr = {1, 2, 2, 2, 2, 2, 4, 4};
         int target = 2;
         int[] result = new int[2];
-        //it returns the index of the first occurrence of the target
-        // It returns the index of the first element greater than the target
+        //lower bound : it returns the index of the first occurrence of the target
+        //upper bound : It returns the index of the first element greater than the target
         result = findUpperLowerBounds(arr, target);
         System.out.println("Lower Bound: " + result[0]); // Output: 1
         System.out.println("Upper Bound: " + result[1]); // Output: 6
@@ -25,7 +25,7 @@ public class LowerAndUpperBound {
                 lowerBound = mid; // Possible ans
                 right = mid - 1;
             } else if (nums[mid] < target) {
-                left = mid +1;
+                left = mid + 1;
             } else {
                 right = mid -1;
             }

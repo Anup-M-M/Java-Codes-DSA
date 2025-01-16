@@ -13,7 +13,7 @@ class A{
         I i = () -> {
             System.out.println(this.x); // 99
             System.out.println(x); // 100
-           // x = 1000; // compileTime Error bcz variable used in lambda expression should be final.
+           //x = 1000; // compileTime Error bcz variable used in lambda expression should be final.
             this.x = 999;
             System.out.println(this.x); // 999
         };
