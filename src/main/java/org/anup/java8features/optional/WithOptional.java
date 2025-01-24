@@ -37,7 +37,7 @@ class UserService1 {
     }
 }
 
-//Optional can help simplify code and reduce the need for multiple null checks, making the codebase cleaner and easier to maintain
+//Optional can help simplify code and reduce the need for multiple null checks, making the codebase cleaner and easier to maintain.
 //Avoiding NullPointerException: By using Optional, you explicitly handle the absence of values and avoid NullPointerException.
 //Readable and Maintainable Code: Optional makes the code more expressive, indicating that a value might be absent and providing a clear way to handle that absence.
 //Combining Multiple Operations: You can combine various operations on the Optional object, making complex value transformations more manageable.

@@ -1,0 +1,10 @@
+
+*.class
+*.class
+*.class
+/out
+/out/production
+*.class
+*.class
+*.class
+*.class

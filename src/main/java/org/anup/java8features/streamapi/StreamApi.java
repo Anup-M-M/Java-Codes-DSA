@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class StreamApi {
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>(Arrays.asList(10,20,40,30,50));
+        List<Integer> list = new ArrayList<>(Arrays.asList(10,10,20,40,30,50));
         System.out.println(list);
 
         //WAP to take out the list where number is grater than 10
@@ -56,6 +56,13 @@ public class StreamApi {
         //WAP to take out the list where we are adding 10 to each elements
         List<Integer> collect1 = list.stream().map(n -> n + 10).collect(Collectors.toList());
         System.out.println("Print the all element by adding 10 to each : "+collect1);
+
+        //8) distinct and sort in descending
+        List<Integer> distinct = list.stream()
+                .distinct()
+                .sorted((a,b)->Integer.compare(b, a))
+                .collect(Collectors.toList());
+        System.out.println(distinct);
 
     }
 }

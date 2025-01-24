@@ -14,7 +14,7 @@ public class PalindromeString  {
     }
 
     private static boolean isPalindromeByRecursion(String str) {
-        // Base case: if the string is empty or has only one character, it is a palindrome
+        // if the string is empty or has only one character, it is a palindrome
         if (str == null || str.length() <= 1) {
             return true;
         }
@@ -24,7 +24,7 @@ public class PalindromeString  {
             return false;
         }
 
-        // Recursive case: check the substring excluding the first and last characters
+        // check the substring excluding the first and last characters
         return isPalindromeByRecursion(str.substring(1, str.length() - 1));
     }
 

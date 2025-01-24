@@ -17,7 +17,7 @@ public class OptionalDemo {
         // ifPresent: Executes a given action if a value is present
         optionalWithValue.ifPresent(value -> System.out.println("Value is present: " + value));
 
-        // orElse: Returns the value if present, otherwise returns a default value
+        // orElse: Returns the value if present, otherwise returns a default value.
         String valueOrElse = emptyOptional.orElse("Default Value");
         System.out.println("Value or Else: " + valueOrElse);
 
