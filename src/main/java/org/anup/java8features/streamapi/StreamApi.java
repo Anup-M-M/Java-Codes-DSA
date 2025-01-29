@@ -40,11 +40,11 @@ public class StreamApi {
         Optional<Integer> max = list.stream().max((o1, o2) -> o1.compareTo(o2));
         System.out.println("max : "+ max.get());
 
-        // 5) anyMatch() - Returns true whether any elements of this stream match the provided predicate, otherwise false.
+        // 5) anyMatch() - Returns true if any elements of this stream match the provided predicate, otherwise false.
         boolean anyMatch = list.stream().anyMatch(n -> n == 10);
         System.out.println("anyMatch : "+anyMatch);
 
-        // 5) allMatch() - Returns true if either no elements of the stream match the provided predicate or the stream is empty, otherwise false
+        // 5) allMatch() - Returns true if either all elements of the stream match the provided predicate or the stream is empty, otherwise false
         boolean allMatch = list.stream().allMatch(n -> n % 2 == 0);
         System.out.println("allMatch : "+allMatch);
 

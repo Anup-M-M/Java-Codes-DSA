@@ -15,13 +15,14 @@ public class CheckStringPalindrome {
                     return false;
                 }
             }
-            return false;
+            return true;
 
             //String reversed = new StringBuffer(str).reverse().toString();
             //return name.equals(reversed);
         };
 
         boolean isPalindromeResult = isPalindrome.test(string);
+
         System.out.println(isPalindromeResult);
 
         if(isPalindromeResult)
