@@ -12,9 +12,10 @@ public class CheckWordInList {
 
         String searchColor = "Orange";
 
-        Predicate<String> checkWordInList = color -> color.equals(searchColor);
+//        Predicate<String> checkWordInList = color -> color.equals(searchColor);
+//        boolean ischeckWordInList = colors.stream().anyMatch(checkWordInList);
 
-        boolean ischeckWordInList = colors.stream().anyMatch(checkWordInList);
+        boolean ischeckWordInList = colors.stream().anyMatch(color -> color.equals(searchColor));
 
         if(ischeckWordInList)
             System.out.println(searchColor + " present in the list");

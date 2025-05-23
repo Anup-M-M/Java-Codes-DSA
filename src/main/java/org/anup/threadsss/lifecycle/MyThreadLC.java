@@ -18,7 +18,7 @@ public class MyThreadLC extends Thread{
         MyThreadLC myThread = new MyThreadLC();
         System.out.println(myThread.getState()); // NEW State
 
-        // myThread.start();
+        myThread.start();
         System.out.println(myThread.getState()); // RUNNABLE State
 
         Thread.sleep(100); //Causes the currently executing thread to sleep for the specified number of milliseconds.
@@ -26,9 +26,6 @@ public class MyThreadLC extends Thread{
 
         myThread.join(); // Caller thread(main) Waits for this thread(myThread) to die.
         System.out.println(myThread.getState()); // TERMINATED State
-
-
-
 
     }
 }

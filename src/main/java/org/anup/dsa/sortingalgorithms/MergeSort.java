@@ -2,6 +2,9 @@ package main.java.org.anup.dsa.sortingalgorithms;
 
 import java.util.Arrays;
 
+//Merger Sort
+//Divide the array into two halves recursively until you have single elements
+//Merge these smaller sorted arrays back together in order.
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {8,5,9,1,6,7};

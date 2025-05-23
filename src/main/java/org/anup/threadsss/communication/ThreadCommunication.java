@@ -36,7 +36,7 @@ class SharedResource{
 
 }
 
-class Producer implements Runnable{
+/*class Producer implements Runnable{
 
     private SharedResource resource ;
 
@@ -50,7 +50,7 @@ class Producer implements Runnable{
             resource.produce(i);
         }
     }
-}
+}*/
 
 class Consumer implements Runnable{
 

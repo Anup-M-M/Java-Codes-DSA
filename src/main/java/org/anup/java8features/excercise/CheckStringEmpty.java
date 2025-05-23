@@ -9,7 +9,7 @@ public class CheckStringEmpty {
         String str1 = "anup";
         String str2 = "";
 
-        Predicate<String> isEmptyString = String::isEmpty; // str -> str.isEmpty();
+        Predicate<String> isEmptyString = String::isEmpty; // str -> str.isEmpty(); or str -> str.length()==0;
         boolean test = isEmptyString.test(str2);
         System.out.println(test);
 
